@@ -1,0 +1,230 @@
+/* One continuous wedding setting; no repeated pasted side frames. */
+.wedding-experience.version-three{--cast-size:clamp(230px,20vw,360px)}
+.wedding-experience.version-three .garden-opening{background:#8b2631}
+.wedding-experience.version-three .garden-opening.leaving{background:transparent}
+.wedding-experience.version-three .curtain{background:repeating-linear-gradient(90deg,#8b2030 0,#bf4a37 5%,#9a2931 10%,#691829 14%);box-shadow:inset -8px 0 25px #4b0d2477;border-color:#e9ba6c;transition:transform 2.35s cubic-bezier(.45,0,.25,1)}
+.wedding-experience.version-three .leaving .curtain.left{transform:translateX(calc(-100% + 13vw + var(--cast-size)*.56))}
+.wedding-experience.version-three .leaving .curtain.right{transform:translateX(calc(100% - 13vw + var(--cast-size)*-.31))}
+.wedding-experience.version-three[data-entrance=welcome] .curtain{opacity:0;transition:transform .45s ease,opacity .45s ease}
+.wedding-experience.version-three[data-entrance=welcome] .curtain.left{transform:translateX(-105%)}
+.wedding-experience.version-three[data-entrance=welcome] .curtain.right{transform:translateX(105%)}
+.wedding-experience.version-three .curtain.right{box-shadow:inset 8px 0 25px #4b0d2477}
+.wedding-experience.version-three .curtain:after{border-color:#f3c47077}
+.wedding-experience.version-three .opening-medallion .garden-button{background:#f1ce82;color:#742332;border-color:#f8d696}
+.wedding-experience.version-three .cast-arriving .opening-medallion{opacity:0;transform:scale(.97);pointer-events:none;transition:opacity .45s,transform .45s}
+.wedding-experience.version-three .v3-classic-interior{background:#fffaf1}
+.wedding-experience.version-three .v3-classic-interior .garden-hero{min-height:1100px;background:linear-gradient(#fffaf1,#fff6e8)}
+.wedding-experience.version-three .v3-classic-interior .garden-hero-copy{width:min(700px,52%);margin:auto;padding:55px 15px 65px;background:linear-gradient(#fffaf1 88%,#fffaf1da 95%,transparent)}
+.wedding-experience.version-three .v3-classic-interior .garden-title{font-size:clamp(4.5rem,7vw,7rem)}
+.wedding-experience.version-three .v3-classic-interior .hero-detail{letter-spacing:.025em;gap:12px}
+.wedding-experience.version-three .v3-classic-interior .invocation{padding:55px 24px;background:linear-gradient(#fff6e8,#fffaf1)}
+.wedding-experience.version-three .v3-classic-interior .couple-chapter{padding-bottom:85px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter{padding:75px 7%;background:linear-gradient(#fffaf1,#fbf1df 40%,#fffaf1)}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter:before{display:none}
+.wedding-experience.version-three .v3-classic-interior .day-chapter{padding-top:85px;padding-bottom:85px}
+.wedding-experience.version-three .v3-classic-interior .memory-chapter{padding-block:75px;background:linear-gradient(#fffaf1,#fdf5e8,#fffaf1)}
+.wedding-experience.version-three .v3-classic-interior .rsvp-section{padding-bottom:110px}
+/* Larger ritual lettering remains on quiet paper, in both languages. */
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid{gap:22px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card{padding:36px 22px 32px;background:#fffdf8}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card .ritual-telugu{font-size:1.22rem;line-height:1.85;margin-bottom:17px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card h3{font-size:2.55rem;line-height:1.2;margin:18px 0 15px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card>p:last-child{font-size:1.125rem;line-height:1.65}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card .ritual-number{font-size:1.85rem}
+/* Puppet cutouts use measured atlas cells, without portrait masks or pose swaps. */
+.version-three .v3-puppet-cast{--cast-size:clamp(205px,20vw,320px);--cast-top:170px;position:absolute;inset:0;pointer-events:none;user-select:none;z-index:4}
+.version-three .v3-cast-overlay{position:fixed;z-index:110;--cast-top:240px}
+.version-three .v3-cast-in-scene{opacity:0}
+.version-three[data-entered=true] .v3-cast-in-scene{opacity:1}
+.version-three .v3-puppet{position:absolute;top:var(--cast-top);width:var(--cast-size);transform:translateX(-50%);transition:left 2.35s cubic-bezier(.45,0,.25,1)}
+.version-three .v3-puppet.groom{left:14%}.version-three .v3-puppet.bride{left:86%}
+.version-three .v3-puppet-art{position:relative;aspect-ratio:3/4;overflow:hidden;filter:drop-shadow(3px 6px 2px #58371f28);transform-origin:center bottom}
+.version-three .v3-puppet-art img{position:absolute;top:0;left:0;width:200%;max-width:none;height:auto}
+.version-three .bride .v3-puppet-art img{left:-100%}
+.version-three .v3-puppet-cast[data-phase=gather] .v3-puppet{animation:v3-puppet-arrive .6s ease both}
+.version-three .v3-puppet-cast[data-phase=gather] .groom{left:calc(50% - var(--cast-size)*.44)}
+.version-three .v3-puppet-cast[data-phase=gather] .bride{left:calc(50% + var(--cast-size)*.44)}
+.version-three .v3-puppet-cast[data-phase=pull] .v3-puppet-art{animation:v3-puppet-step .7s ease-in-out 3}
+.version-three .v3-cast-in-scene .v3-puppet-art{animation:v3-puppet-sway 8s ease-in-out infinite}
+.version-three .v3-cast-in-scene .bride .v3-puppet-art{animation-delay:-4s}
+@keyframes v3-puppet-arrive{from{opacity:0;transform:translate(-50%,25px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes v3-puppet-step{0%,100%{transform:rotate(0)}50%{transform:rotate(2deg)}}
+@keyframes v3-puppet-sway{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1deg)}}
+/* The blessing button retains its separate, finite lotus shower. */
+.version-three .v3-flower-shower{position:fixed;inset:0;overflow:hidden;z-index:120;pointer-events:none}
+.version-three .v3-flower-shower img{position:absolute;top:-75px;height:auto;max-width:none;opacity:0;animation:v3-blessing-lotus var(--flower-time,4.5s) linear var(--flower-delay,0s) both}
+@keyframes v3-blessing-lotus{0%{opacity:0;transform:translate3d(0,-30px,0) rotate(0)}8%{opacity:.95}80%{opacity:.95}100%{opacity:0;transform:translate3d(0,calc(100dvh + 150px),0) rotate(var(--flower-turn,25deg))}}
+/* Remove framing and the programmatic heading focus rectangle. */
+.wedding-experience.version-three .curtain{border:0}
+.wedding-experience.version-three .curtain:after{display:none}
+.wedding-experience.version-three .opening-medallion{border:0;outline:0;box-shadow:none}
+.wedding-experience.version-three .garden-title:focus{outline:none}
+.wedding-experience.version-three .v3-classic-interior .garden-hero-copy{background:none}
+.wedding-experience.version-three .leaving .curtain.left{transform:translateX(-105%)}
+.wedding-experience.version-three .leaving .curtain.right{transform:translateX(105%)}
+.wedding-experience.version-three .opening-muted{font-size:.875rem;min-height:44px}
+.wedding-experience.version-three .opening-subtitle{font-size:.75rem}
+/* Two shared moments fit beside the chapter heading in their own layout cells. */
+.version-three .v3-moment-heading{display:grid;grid-template-columns:minmax(0,650px) 240px;justify-content:center;align-items:center;gap:35px;width:min(100%,1000px);margin:0 auto;text-align:center}
+.version-three .v3-moment-heading>div:first-child{min-width:0}
+.version-three .v3-couple-moment{width:240px;max-width:100%;margin:auto;pointer-events:none;user-select:none;animation:v3-shared-moment 8s ease-in-out infinite}
+.version-three .v3-couple-moment img{display:block;width:100%;height:auto;object-fit:contain}
+.version-three .cooking{animation-delay:-4s}
+@keyframes v3-shared-moment{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@media(max-width:1100px){
+.version-three .v3-moment-heading{grid-template-columns:minmax(0,600px) 190px;gap:20px}
+.version-three .v3-couple-moment{width:190px}
+}
+@media(max-width:1000px){
+.version-three .v3-puppet-cast{--cast-size:155px;--cast-top:var(--scene-cast-top,425px)}
+.version-three .v3-cast-overlay{--cast-top:var(--overlay-cast-top,495px)}
+.version-three .v3-puppet.groom{left:21%}.version-three .v3-puppet.bride{left:79%}
+.wedding-experience.version-three .v3-classic-interior .garden-hero{min-height:var(--mobile-hero-height,970px)}
+.wedding-experience.version-three .v3-classic-interior .garden-hero-copy{width:100%;padding:28px 20px 25px}
+.wedding-experience.version-three .v3-classic-interior .garden-hero .ganesh-mark{width:30px;height:33px}
+.wedding-experience.version-three .v3-classic-interior .garden-hero-copy .opening-telugu{margin:8px 0 10px;font-size:.875rem}
+.wedding-experience.version-three .v3-classic-interior .garden-hero .hero-kicker{font-size:1.15rem;margin-bottom:13px}
+.wedding-experience.version-three .v3-classic-interior .garden-title{font-size:3.8rem;line-height:.98}
+.wedding-experience.version-three .v3-classic-interior .garden-title>span:not(.v1-live){margin:8px 0 12px;font-size:1.2rem}
+.wedding-experience.version-three .v3-classic-interior .hero-detail{margin:19px 0 12px;gap:8px;font-size:.875rem;letter-spacing:0}
+.wedding-experience.version-three .v3-classic-interior .garden-hero .hero-place{font-size:1rem;max-width:340px;line-height:1.55}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card h3{font-size:2.35rem}
+}
+@media(max-width:760px){
+.version-three .v3-cast-overlay{--cast-top:var(--overlay-cast-top,485px)}
+.version-three .v3-moment-heading{display:flex;flex-direction:column;gap:12px;padding-inline:20px;width:100%}
+.version-three .v3-couple-moment{width:min(210px,65vw)}
+.wedding-experience.version-three .v3-classic-interior .memory-chapter .v3-moment-heading h2{padding-inline:0}
+.wedding-experience.version-three .v3-classic-interior .couple-chapter{padding-bottom:65px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter{padding:60px 28px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card{padding:31px 24px}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card .ritual-telugu{font-size:1.2rem}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter .ritual-grid .ritual-card h3{font-size:2.45rem}
+.wedding-experience.version-three .v3-classic-interior .day-chapter{padding:65px 28px}
+.wedding-experience.version-three .v3-classic-interior .rsvp-section{padding-bottom:100px}
+.wedding-experience.version-three .v3-classic-interior .chapter-label{line-height:1.6;letter-spacing:.08em}
+}
+@media(max-width:370px){.version-three .v3-puppet-cast{--cast-size:135px}.wedding-experience.version-three .v3-classic-interior .garden-title{font-size:3.4rem}}
+.version-three .v3-classic-interior[data-motion=off] :is(.v3-puppet-art,.v3-couple-moment){animation:none!important}
+@media(prefers-reduced-motion:reduce){.version-three .v3-flower-shower{display:none}.version-three .v3-puppet{transition:none}.version-three :is(.v3-puppet-art,.v3-couple-moment){animation:none!important}}
+@media(max-height:700px){
+.wedding-experience.version-three .garden-opening{overflow-y:auto}
+.wedding-experience.version-three .opening-medallion{padding-block:18px}
+.wedding-experience.version-three .opening-medallion .ganesh-mark{width:44px;height:48px}
+.wedding-experience.version-three .opening-medallion h1{font-size:3.4rem}
+.wedding-experience.version-three .opening-medallion h1 span{margin:12px 0 15px}
+.wedding-experience.version-three .opening-medallion .opening-telugu{margin:8px 0 16px}
+.wedding-experience.version-three .opening-medallion .opening-date{margin:20px 0 18px}
+}
+/* The welcome is two separate layers: clear ivory stage, then the elephant scene. */
+.wedding-experience.version-three .v3-classic-interior .garden-hero{min-height:calc(var(--welcome-height,660px) + clamp(320px,50vw,750px));background:#fffaf1}
+.version-three .v3-welcome-stage{position:relative;z-index:6;min-height:var(--welcome-height,660px);background:#fffaf1;isolation:isolate}
+.wedding-experience.version-three .v3-classic-interior .garden-hero-copy{background:none;width:min(700px,52%);padding:55px 15px 45px}
+.wedding-experience.version-three .v3-classic-interior .garden-title{color:#8e4b3e}
+.wedding-experience.version-three .v3-classic-interior .garden-world{width:min(1500px,100%);height:auto;left:50%;bottom:0;object-fit:contain;transform:translateX(-50%)!important;mask-image:linear-gradient(transparent,#000 23%,#000);z-index:0}
+.version-three .v3-puppet-cast{--cast-top:var(--scene-cast-top,170px)}
+.version-three .v3-cast-overlay{--cast-top:var(--overlay-cast-top,240px)}
+/* The opening and blessing share one uninterrupted vertical lotus fall. */
+.version-three .v3-entrance-flowers{z-index:45;--flower-groom-x:14%;--flower-bride-x:86%}
+.version-three .v3-entrance-flowers img{width:27px}
+/* Each chapter has one miniature pair, contained away from its readable copy. */
+.version-three .v3-couple-moment.atlas{position:relative;aspect-ratio:3/2;overflow:hidden}
+.version-three .v3-couple-moment.atlas img{position:absolute;width:200%;max-width:none;height:auto;object-fit:initial}
+.version-three .v3-venue-intro>.v3-couple-moment{width:210px;margin:0 0 20px}
+.version-three .rsvp-intro>.v3-couple-moment{width:210px;margin:22px 0 0}
+.version-three .garden-footer>.v3-couple-moment{width:210px;margin:0 auto 20px}
+/* One joined border world spans the invitation instead of restarting per chapter. */
+.wedding-experience.version-three .v3-classic-interior{background:#fbefdf}
+.version-three .v3-bordered-invitation{position:relative;isolation:isolate}
+.version-three .v3-thoranam-borders{position:absolute;inset:0;pointer-events:none;user-select:none;z-index:2}
+.version-three .v3-thoranam-rail{position:absolute;inset-block:0;width:88px}
+.version-three .v3-thoranam-rail.left{left:0}
+.version-three .v3-thoranam-rail.right{right:0;transform:scaleX(-1)}
+.version-three .v3-thoranam-strand{position:absolute;inset-block:0;display:flex;flex-direction:column}
+.version-three .v3-thoranam-strand img{display:block;width:100%;height:0;min-height:0;max-width:none;flex:1 1 0;object-fit:fill}
+/* Adjacent mirrored ends share identical pixels, so there is no join gap. */
+.version-three .v3-thoranam-strand img:nth-child(even){transform:scaleY(-1)}
+.version-three .v3-thoranam-primary{left:5px;width:54px}
+.version-three .v3-thoranam-companion{left:48px;width:30px;opacity:.65}
+.wedding-experience.version-three .v3-classic-interior :is(.invocation,.couple-chapter,.day-chapter,.rsvp-section){background:linear-gradient(#fbefdf,#f9e9d2 48%,#fbefdf)}
+.wedding-experience.version-three .v3-classic-interior .tradition-chapter{background:linear-gradient(#fbefdf,#f6e4ca 50%,#fbefdf)}
+.wedding-experience.version-three .v3-classic-interior .memory-chapter{background:linear-gradient(#fbefdf,#fae9d4 50%,#fbefdf)}
+.wedding-experience.version-three .v3-classic-interior .venue-chapter{background:linear-gradient(#fbefdf,#f8e7d0 55%,#fbefdf)}
+.wedding-experience.version-three .v3-classic-interior :is(.day-chapter,.rsvp-section){max-width:none}
+.wedding-experience.version-three .v3-classic-interior .rsvp-section{padding-inline:max(7%,calc((100% - 1100px)/2))}
+.version-three :is(.v3-moment-heading,.tradition-layout,.family-union,.date-display,.event-tickets,.four-keepsakes,.rsvp-intro,.rsvp-panel){position:relative;z-index:1}
+@media(max-width:1000px){
+.wedding-experience.version-three .v3-classic-interior .garden-hero-copy{width:100%;padding:28px 20px 25px}
+.wedding-experience.version-three .v3-classic-interior .garden-hero{min-height:calc(var(--welcome-height,700px) + min(66.667vw,500px))}
+.version-three .v3-entrance-flowers{--flower-groom-x:21%;--flower-bride-x:79%}
+/* Begin the mobile shower just above the puppets, below the invitation copy. */
+.version-three .v3-entrance-flowers img{width:20px;top:calc(var(--overlay-cast-top,495px) - 55px)}
+}
+@media(max-width:760px){
+/* Both mobile strands remain inside the existing 20px text gutters. */
+.wedding-experience.version-three .v3-classic-interior .rsvp-section{padding-inline:20px}
+.version-three .v3-thoranam-rail{width:20px}
+.version-three .v3-thoranam-primary{left:0;width:22px}
+.version-three .v3-thoranam-companion{left:9px;width:10px;opacity:.5}
+.version-three .v3-venue-intro>.v3-couple-moment,.version-three .rsvp-intro>.v3-couple-moment{margin:0 auto 20px}
+.version-three .v3-entrance-flowers img{width:16px}
+.wedding-experience.version-three .v3-classic-interior .four-keepsakes{padding-inline:40px}
+.version-three .rsvp-intro>.v3-couple-moment{margin-top:20px}
+}
+.version-three .v3-classic-interior[data-motion=off] .v3-couple-moment{transform:none!important}
+@media(prefers-reduced-motion:reduce){.version-three .v3-entrance-flowers{display:none}}
+
+/* Preserve every photograph frame while photographs are being selected. */
+.version-three .v3-empty-photo{display:block;width:100%;aspect-ratio:3/4;background:#fbf1df;border:1px solid #b2935644}
+.version-three .v3-empty-photo.couple{aspect-ratio:4/5}
+.version-three .keepsake-card{cursor:default;text-align:center}
+
+/* A quiet invitation to explore, visible only until the first scroll. */
+.version-three .v3-scroll-cue{position:fixed;left:50%;bottom:clamp(28px,6vh,58px);z-index:118;display:grid;place-items:center;width:60px;height:60px;color:#8e4b3e;background:none;border:0;text-decoration:none;filter:drop-shadow(0 1px 2px #fffaf1);animation:v3-scroll-cue-float 2s ease-in-out infinite}
+.version-three .v3-scroll-cue svg{width:38px;height:46px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.version-three .v3-scroll-cue:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:6px}
+@keyframes v3-scroll-cue-float{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
+@media(max-width:760px){.version-three .v3-scroll-cue{bottom:calc(28px + env(safe-area-inset-bottom));width:52px;height:52px}.version-three .v3-scroll-cue svg{width:34px;height:42px}}
+@media(prefers-reduced-motion:reduce){.version-three .v3-scroll-cue{animation:none;transform:translateX(-50%)}}
+
+/* The original elephant invitation, shortened around the families and wedding. */
+.wedding-experience.v3-short-invite .leaving .curtain.left{transform:translateX(-101%)}.wedding-experience.v3-short-invite .leaving .curtain.right{transform:translateX(101%)}
+.wedding-experience.v3-short-invite .curtain{background:repeating-linear-gradient(90deg,#681829 0,#943442 5%,#7c2335 10%,#491321 14%)}
+.wedding-experience.v3-short-invite .opening-medallion h1{font-size:clamp(2.4rem,6vw,5.2rem)}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-hero{min-height:0;background:#fffaf1}
+.v3-short-invite .v3-welcome-stage{min-height:0}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-hero-copy{width:min(850px,100%);padding:38px 32px 15px;background:none}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-title,.v3-short-invite .v3-bride-name{font-size:clamp(3rem,7vw,5.3rem);line-height:1.15;letter-spacing:-.03em;color:#8e4b3e;margin:0 auto 12px}
+.v3-short-invite .v3-family-line{font:1.2rem/1.6 'Cormorant Garamond',Georgia,serif;color:#795647}.v3-short-invite .v3-family-line>span{display:block;font:400 .67rem/1.8 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#89672f;margin-bottom:3px}.v3-short-invite .v3-weds{font:italic 1.6rem Georgia,serif;color:#a48143;margin:17px auto}.v3-short-invite .v3-short-invitation{font:1.25rem/1.6 'Cormorant Garamond',Georgia,serif;color:#795647;margin-top:24px}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-world{position:relative;left:auto;bottom:auto;transform:none!important;margin:0 auto;width:min(1100px,100%);height:auto;object-fit:contain;mask-image:linear-gradient(transparent,#000 18%,#000);z-index:0}
+.wedding-experience.v3-short-invite .v3-classic-interior .day-chapter{padding:48px max(8%,24px);text-align:center}.v3-short-invite .day-chapter>h2{font-size:2.9rem}.v3-short-invite .event-tickets{max-width:850px;gap:20px;margin:25px auto 15px}.wedding-experience.v3-short-invite .event-ticket{padding:24px 20px}.v3-short-invite .v3-short-venue{max-width:700px;margin:34px auto 0;padding-top:28px;border-top:1px solid #b2935644}.v3-short-invite .v3-short-venue h2{font-size:2.6rem;line-height:1.15;margin-bottom:15px}.v3-short-invite .v3-short-venue p{font-size:1rem;color:#795647;margin-bottom:22px}
+.wedding-experience.v3-short-invite .v3-classic-interior .rsvp-section{padding-block:40px 85px}.v3-short-invite .rsvp-intro{padding-top:15px}.v3-short-invite .rsvp-intro h2{font-size:3rem}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-footer{min-height:0;padding:38px 28px 285px}.wedding-experience.v3-short-invite .garden-footer h2{font-size:2.7rem;margin:12px auto 18px}.wedding-experience.v3-short-invite .garden-footer .footer-couple{font-size:2rem}.wedding-experience.v3-short-invite .garden-footer>.v1-lotus-lake{width:100%;height:330px;left:0;object-fit:cover;object-position:center 62%;transform:none;mask-image:linear-gradient(transparent,#000 40%,#000)}
+.v3-short-invite .v3-entrance-flowers img{top:-60px;width:18px}
+@media(max-width:760px){.wedding-experience.v3-short-invite .v3-classic-interior .garden-hero-copy{padding:28px 28px 10px}.wedding-experience.v3-short-invite .v3-classic-interior .garden-title,.v3-short-invite .v3-bride-name{font-size:clamp(2.25rem,10vw,3.6rem)}.v3-short-invite .v3-family-line{font-size:1.1rem}.v3-short-invite .v3-short-invitation{font-size:1.15rem}.wedding-experience.v3-short-invite .opening-medallion h1{font-size:clamp(2.15rem,9vw,3.2rem)}.wedding-experience.v3-short-invite .v3-classic-interior .day-chapter{padding:38px 30px}.v3-short-invite .event-tickets{grid-template-columns:1fr 1fr;gap:12px}.wedding-experience.v3-short-invite .event-ticket{padding:20px 12px}.wedding-experience.v3-short-invite .event-ticket h3{font-size:1.5rem}.wedding-experience.v3-short-invite .event-ticket strong{font-size:2.6rem}.v3-short-invite .v3-short-venue h2{font-size:2.2rem}.v3-short-invite .day-chapter>h2{font-size:2.35rem}.v3-short-invite .v3-entrance-flowers img{top:-60px;width:14px}.wedding-experience.v3-short-invite .v3-classic-interior .garden-footer{padding:30px 30px 220px}.wedding-experience.v3-short-invite .garden-footer>.v1-lotus-lake{height:260px;width:100%;left:0}.wedding-experience.v3-short-invite .garden-footer .footer-couple{font-size:1.8rem}.v3-short-invite .rsvp-intro h2{font-size:2.6rem}}
+
+/* A brighter silk entrance and a luminous Telugu wedding welcome. */
+.wedding-experience.v3-short-invite .curtain{background:repeating-linear-gradient(90deg,#a7253f 0%,#ed7864 5%,#cb4351 10%,#8f243c 14%);box-shadow:inset -8px 0 25px #7c162b44}
+.wedding-experience.v3-short-invite .garden-opening{background:#a62a40}
+.wedding-experience.v3-short-invite .garden-opening.leaving{background:transparent}
+.wedding-experience.v3-short-invite .opening-medallion h1{color:#fffbe0;font-weight:600;text-shadow:0 2px 4px #6c142d44}
+.wedding-experience.v3-short-invite .opening-medallion h1 span{color:#fff1b3}
+.wedding-experience.v3-short-invite .opening-medallion .opening-date{color:#fff9da;font-size:1.25rem;font-weight:600;letter-spacing:.025em}
+.wedding-experience.v3-short-invite .opening-medallion :is(.opening-telugu,.opening-subtitle,.opening-muted){color:#fff1c3}
+.wedding-experience.v3-short-invite .opening-medallion .garden-button{background:#ffe8a1;color:#792037;border:1px solid #fff5cf;font-weight:600}
+.wedding-experience.v3-short-invite .curtain .rangoli{color:#ffe6a1;opacity:.3}
+.v3-short-invite .v3-welcome-stage{background:radial-gradient(ellipse at 50% 35%,#fffef4,#fff7df 85%)}
+.v3-short-invite .v3-welcome-layout{position:relative;z-index:3;width:min(1200px,calc(100% - 160px));margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;padding:20px 0 25px}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-hero-copy{width:100%;padding:20px 0 10px}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-title,.v3-short-invite .v3-bride-name{font-size:clamp(3rem,4.7vw,4.8rem);color:#a32942;font-weight:600;line-height:1.14}
+.wedding-experience.v3-short-invite .v3-classic-interior .garden-hero .hero-kicker{color:#6c422b;font-weight:500}
+.v3-short-invite .v3-family-line{color:#624127;font-size:1.25rem;font-weight:500}.v3-short-invite .v3-family-line>span{color:#946315;font-weight:600}.v3-short-invite .v3-weds{color:#a77616}.v3-short-invite .v3-short-invitation{color:#6c422b;font-weight:500}
+.v3-short-invite .v3-telugu-art{width:100%;align-self:stretch;display:flex;align-items:center;justify-content:center}.v3-short-invite .v3-telugu-art img{width:100%;height:auto;mix-blend-mode:multiply;filter:saturate(1.08);mask-image:linear-gradient(transparent,#000 5%,#000 96%,transparent)}
+.v3-short-invite .v3-flower-shower img{max-width:clamp(38px,7vw,80px);filter:drop-shadow(0 2px 3px #b867351a)}
+.wedding-experience.v3-short-invite .garden-nav .rsvp-shortcut{display:inline-flex!important;background:#a32942;color:#fff9df;border:1px solid #a32942;font-weight:600}
+@media(max-width:1000px){.v3-short-invite .v3-welcome-layout{width:calc(100% - 100px);grid-template-columns:1fr;gap:0;padding:0 0 10px}.v3-short-invite .v3-telugu-art{max-width:600px;margin:5px auto 0}.wedding-experience.v3-short-invite .v3-classic-interior .garden-title,.v3-short-invite .v3-bride-name{font-size:clamp(2.5rem,7vw,4.8rem)}}
+@media(max-width:760px){.v3-short-invite .v3-welcome-layout{width:calc(100% - 56px)}.wedding-experience.v3-short-invite .v3-classic-interior .garden-hero-copy{padding:28px 0 10px}.wedding-experience.v3-short-invite .v3-classic-interior .garden-title,.v3-short-invite .v3-bride-name{font-size:clamp(2.25rem,10vw,3.6rem)}.v3-short-invite .v3-family-line{font-size:1.15rem}.v3-short-invite .v3-telugu-art{margin-top:8px}.wedding-experience.v3-short-invite .opening-medallion .opening-date{font-size:1.05rem}.wedding-experience.v3-short-invite .garden-nav nav{gap:16px}.v3-short-invite .v3-flower-shower img{max-width:54px}}
+.wedding-experience.v3-short-invite .v3-classic-interior .v3-bride-name{font-size:clamp(3rem,4.7vw,4.8rem);color:#a32942;font-weight:600;line-height:1.14}
+.wedding-experience.v3-short-invite .day-chapter>.chapter-label{color:#8b4e10;font-weight:600}
+@media(max-width:1000px){.wedding-experience.v3-short-invite .v3-classic-interior .v3-bride-name{font-size:clamp(2.5rem,7vw,4.8rem)}}
+@media(max-width:760px){.wedding-experience.v3-short-invite .v3-classic-interior .v3-bride-name{font-size:clamp(2.25rem,10vw,3.6rem)}}

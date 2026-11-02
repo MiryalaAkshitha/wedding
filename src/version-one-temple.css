@@ -1,0 +1,120 @@
+/* Version one's existing journey, dressed in version two's illustrated scenery. */
+.wedding-experience .v1-temple-interior{--forest:#624f43;--cream:#fffaf1;--rose:#985d50;--gold:#a48143;--saffron:#b58b42;background:#fffaf1;color:#624f43}
+.wedding-experience .v1-temple-interior :is(h1,h2,h3){color:#985d50;font-weight:500}
+.wedding-experience .v1-temple-interior h2 em{color:#985d50;font-weight:400}
+.wedding-experience .v1-temple-interior :is(.chapter-label,.eyebrow){color:#89672f;font-size:.875rem}
+.wedding-experience .v1-temple-interior .telugu{color:#89672f}
+.wedding-experience .v1-temple-interior .garden-nav{background:#fffaf1ed;border-color:#b2935644;box-shadow:none}
+.wedding-experience .v1-temple-interior .garden-nav>a{color:#785b39}
+.wedding-experience .v1-temple-interior .garden-nav nav{font-size:.875rem}
+.wedding-experience .v1-temple-interior .rsvp-shortcut{background:#985d50;color:#fffaf1}
+/* Text comes together, settles, then moves gently within its own line box. */
+.v1-temple-interior .v1-reader{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.v1-temple-interior .v1-live{display:inline-block;max-width:100%;perspective:900px}
+.v1-temple-interior :is(.v1-letter,.v1-word){display:inline-block;transform-origin:center bottom}
+.v1-temple-interior .v1-word{margin-right:.2em}.v1-temple-interior .v1-word:last-child{margin-right:0}
+.v1-temple-interior .v1-live.visible :is(.v1-letter,.v1-word){animation:v1-come-together 1.5s cubic-bezier(.2,.85,.3,1) both;animation-delay:var(--delay,0s)}
+.v1-temple-interior .visible h2>.v1-live{animation:v1-title-float 7s ease-in-out 2.5s infinite}
+.v1-temple-interior .visible h2>em>.v1-live{animation:v1-title-float 8s ease-in-out 3s infinite reverse}
+@keyframes v1-come-together{0%{opacity:0;transform:translate(var(--side),32px) rotate(var(--turn)) rotateX(-35deg)}65%{opacity:1;transform:translate(0,-3px) rotate(0) rotateX(0)}100%{opacity:1;transform:translate(0,0) rotate(0) rotateX(0)}}
+@keyframes v1-title-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+/* The names sit in clear sky, above the temple roof and elephant courtyard. */
+.wedding-experience .v1-temple-interior .garden-hero{min-height:1300px;background:#fffaf1}
+.wedding-experience .v1-temple-interior .garden-world{width:min(1500px,100%);max-width:none;height:auto;left:50%;bottom:0;object-fit:contain;transform:translateX(-50%) translateY(calc(var(--drift,0)*-35px)) scale(1.04);mask-image:linear-gradient(transparent,#000 25%,#000)}
+.wedding-experience .v1-temple-interior .garden-hero-copy{padding:60px 24px 60px;background:linear-gradient(#fffaf1 85%,#fffaf1ef 92%,transparent)}
+.wedding-experience .v1-temple-interior .garden-hero .ganesh-mark{color:#a47a38;width:43px;height:46px}
+.wedding-experience .v1-temple-interior .garden-hero-copy .opening-telugu{color:#936c34;font-size:.875rem}
+.wedding-experience .v1-temple-interior .garden-title{font-size:clamp(5rem,7vw,7rem);letter-spacing:-.025em;line-height:.95;color:#a26756}
+.wedding-experience .v1-temple-interior .garden-title>.v1-live{display:block;font:inherit;letter-spacing:inherit;color:inherit;margin:0}
+.wedding-experience .v1-temple-interior .garden-title>span:not(.v1-live){font:italic 1.4rem/1.2 'Cormorant Garamond',serif;letter-spacing:0;margin:10px 0 15px;color:#967143}
+.wedding-experience .v1-temple-interior .hero-kicker{font-size:1.3rem;color:#795647}
+.wedding-experience .v1-temple-interior .hero-detail{font-size:.875rem;letter-spacing:.07em;color:#795647;flex-wrap:wrap;gap:15px}
+.wedding-experience .v1-temple-interior .hero-detail i{background:#b29356}
+.wedding-experience .v1-temple-interior .garden-hero .hero-place{font-size:1rem;color:#795647;max-width:450px;margin:auto;line-height:1.6}
+.wedding-experience .v1-temple-interior .hero-scroll{font-size:.875rem;color:#795647;background:#fffaf1e8;border-color:#b29356;bottom:25px;max-width:90%;white-space:normal;text-align:center}
+.v1-temple-interior .v1-walkers{position:absolute;left:50%;bottom:9%;width:200px;height:auto;transform:translateX(-50%) translateY(calc(var(--drift,0)*-70px));pointer-events:none}
+.wedding-experience .v1-temple-interior .invocation{background:#fffaf1;color:#624f43;padding:65px 24px}
+.wedding-experience .v1-temple-interior .invocation:after{border-color:#b2935644;inset:8px 8%}
+.wedding-experience .v1-temple-interior .invocation .telugu{color:#89672f}
+.wedding-experience .v1-temple-interior .invocation p:last-child{font-size:1.55rem;line-height:1.55}
+/* A floral stage leads into the real couple and their family introductions. */
+.wedding-experience .v1-temple-interior .couple-chapter{max-width:none;position:relative;padding-top:0;background:#fffaf1}
+.v1-temple-interior .v1-mandap{max-width:1200px;height:360px;margin:0 auto 35px;overflow:hidden}
+.v1-temple-interior .v1-mandap img{width:100%;height:100%;object-fit:cover;object-position:center bottom;mask-image:linear-gradient(transparent,#000 25%,#000 80%,transparent)}
+.wedding-experience .v1-temple-interior .family-union-photo{background:#fffdf7;border:1px solid #b29356;box-shadow:12px 12px 0 #b2935622;transform:translateY(calc(var(--drift,0)*-15px))}
+.wedding-experience .v1-temple-interior .family-union-photo>p{color:#795647}
+.wedding-experience .v1-temple-interior .family-union-names{border-color:#b2935666}
+.wedding-experience .v1-temple-interior .family-union-names h3{color:#985d50;letter-spacing:-.025em}
+.wedding-experience .v1-temple-interior .family-union-names article>p:last-child{color:#624f43}
+.wedding-experience .v1-temple-interior .family-union-and{color:#a48143}
+/* Every ritual stays readable on its own ivory paper surface. */
+.wedding-experience .v1-temple-interior .tradition-chapter{background:#fbf1df;color:#624f43;padding:85px 7%}
+.wedding-experience .v1-temple-interior .tradition-chapter:before{border-color:#b2935644;inset:16px}
+.wedding-experience .v1-temple-interior .tradition-chapter .chapter-label{color:#89672f}
+.wedding-experience .v1-temple-interior .tradition-chapter h2,.wedding-experience .v1-temple-interior .tradition-chapter h2 em{color:#985d50}
+.wedding-experience .v1-temple-interior .ritual-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px;gap:24px}
+.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card{background:#fffaf1;border:1px solid #b29356;border-radius:65px 65px 4px 4px;padding:36px 24px 30px;color:#624f43}
+.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card h3{color:#985d50;font-weight:500;font-size:2.2rem;line-height:1.2}
+.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card .ritual-telugu,.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card .ritual-number{color:#89672f}
+.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card>p:last-child{color:#624f43;font-size:1rem}
+.wedding-experience .v1-temple-interior .day-chapter{background:#fffaf1}
+.wedding-experience .v1-temple-interior .date-display{color:#985d50}
+.wedding-experience .v1-temple-interior .date-display>span{font-size:.875rem;letter-spacing:.05em}
+.wedding-experience .v1-temple-interior .event-ticket{background:#fffdf7;border:1px solid #b29356;border-radius:55px 55px 4px 4px;padding:40px 25px}
+.wedding-experience .v1-temple-interior .event-ticket:before,.wedding-experience .v1-temple-interior .event-ticket:after{display:none}
+.wedding-experience .v1-temple-interior .event-ticket h3,.wedding-experience .v1-temple-interior .event-ticket strong{color:#985d50}
+.wedding-experience .v1-temple-interior .event-ticket .telugu{font-size:1rem;color:#89672f}
+.wedding-experience .v1-temple-interior .event-ticket>p:last-child{color:#624f43;font-size:1rem}
+.wedding-experience .v1-temple-interior .calendar-link{color:#89672f;font-size:1rem}
+.wedding-experience .v1-temple-interior .countdown-inline div strong{color:#a48143;font-size:3.2rem}
+.wedding-experience .v1-temple-interior .countdown-inline div span{font-size:.875rem;letter-spacing:.03em;color:#89672f}
+.wedding-experience .v1-temple-interior .timezone{color:#624f43;font-size:.875rem}
+/* The four supplied keepsakes stay visible, with small scroll-driven offsets. */
+.wedding-experience .v1-temple-interior .memory-chapter{background:#fffaf1}
+.wedding-experience .v1-temple-interior .memory-chapter h2{color:#985d50;padding-inline:24px}
+.wedding-experience .v1-temple-interior .keepsake-card{background:#fffdf7;box-shadow:0 8px 25px #70523126;transform:translateY(calc(var(--drift,0)*-28px)) rotate(-4deg)}
+.wedding-experience .v1-temple-interior .keepsake-card:nth-child(even){transform:translateY(calc(var(--drift,0)*28px)) rotate(4deg)}
+.wedding-experience .v1-temple-interior .keepsake-card span{color:#795647;font-size:1.35rem}
+.wedding-experience .v1-temple-interior .chapter-note{color:#624f43;padding-inline:25px}
+.wedding-experience .v1-temple-interior .venue-chapter{background:#fbf1df;color:#624f43;isolation:isolate;padding-block:95px 310px}
+.v1-temple-interior .v1-venue-scenery{position:absolute;width:100%;height:290px;bottom:0;left:0;object-fit:cover;object-position:center bottom;transform:translateY(calc(var(--drift,0)*-20px));mask-image:linear-gradient(transparent,#000 35%,#000 85%,transparent);z-index:-1;pointer-events:none}
+.wedding-experience .v1-temple-interior .venue-chapter h2{color:#985d50}
+.wedding-experience .v1-temple-interior .venue-address{border-color:#b2935666}
+.wedding-experience .v1-temple-interior .venue-address small{color:#624f43;font-size:.875rem}
+.wedding-experience .v1-temple-interior .garden-button{background:#985d50;color:#fffaf1;border-color:#a48143;font-size:1rem}
+.wedding-experience .v1-temple-interior .garden-button.light{background:#fffaf1;color:#795647}
+.wedding-experience .v1-temple-interior .rsvp-section{background:#fffaf1;margin-bottom:0;padding-bottom:120px}
+.wedding-experience .v1-temple-interior .rsvp-intro h2,.wedding-experience .v1-temple-interior .rsvp-intro h2 em{color:#985d50}
+.wedding-experience .v1-temple-interior .rsvp-intro>p:not(.eyebrow){color:#624f43;font-size:1rem}
+.wedding-experience .v1-temple-interior .rsvp-panel{background:#fffdf7;border-color:#b2935677;box-shadow:none;outline:none;color:#624f43}
+.wedding-experience .v1-temple-interior .rsvp-panel :is(label,legend){font-size:1rem;color:#624f43}
+.wedding-experience .v1-temple-interior .rsvp-panel label>span{font-size:.875rem;color:#795647}
+.wedding-experience .v1-temple-interior .rsvp-panel .choice{font-size:1rem;border-color:#b2935677}
+.wedding-experience .v1-temple-interior .rsvp-panel .choice.selected{border-color:#a48143;background:#fbf1df}
+.wedding-experience .v1-temple-interior .rsvp-panel .submit{background:#587766;color:#fffaf1;border-color:#587766;font-size:1rem;min-height:54px}
+/* The elephant and lotus lake are the actual version-two finale artwork. */
+.wedding-experience .v1-temple-interior .garden-footer{background:#faf2e5;color:#624f43;isolation:isolate;min-height:950px;padding:65px 25px 530px}
+.wedding-experience .v1-temple-interior .garden-footer>.v1-lotus-lake{position:absolute;left:0;bottom:0;top:auto;width:100%;height:auto;max-width:none;z-index:-1;pointer-events:none;transform:translateY(calc(var(--drift,0)*-20px)) scale(1.04);transform-origin:center bottom;mask-image:linear-gradient(transparent,#000 28%,#000)}
+.wedding-experience .v1-temple-interior .garden-footer h2{color:#985d50;font-size:clamp(2.6rem,4.5vw,4rem);margin:15px 0 24px}
+.wedding-experience .v1-temple-interior .garden-footer .telugu{color:#89672f}
+.wedding-experience .v1-temple-interior .garden-footer .footer-couple{color:#985d50;font-size:2.3rem}
+.wedding-experience .v1-temple-interior .garden-footer .footer-date{color:#795647!important;font-size:.875rem;letter-spacing:.02em}
+.wedding-experience .v1-temple-interior .blessing-action{background:#fffaf1db;border-color:#a48143;color:#795647;font-size:1rem}
+.wedding-experience .v1-temple-interior .garden-footer .blessing-message{color:#624f43;font-size:1.35rem;max-width:560px;margin:20px auto 0}
+.wedding-experience .v1-temple-interior .host-link{color:#795647;opacity:1;font-size:.875rem}
+.wedding-experience .v1-temple-interior .music-toggle,.v1-temple-interior .v1-motion-toggle{position:fixed;z-index:40;bottom:16px;background:#fffaf1ed;color:#76573d;border:1px solid #b2935677;border-radius:25px;padding:11px 15px;min-height:44px;box-shadow:none;font-size:.875rem;backdrop-filter:blur(8px)}
+.v1-temple-interior .v1-motion-toggle{left:16px}.wedding-experience .v1-temple-interior .music-toggle{right:16px}
+@media(max-width:760px){
+.wedding-experience .v1-temple-interior .garden-nav{padding-inline:18px}.wedding-experience .v1-temple-interior .garden-nav nav{gap:15px}.wedding-experience .v1-temple-interior .garden-hero{min-height:950px}
+.wedding-experience .v1-temple-interior .garden-world{width:190%;bottom:-5px}.wedding-experience .v1-temple-interior .garden-hero-copy{padding:38px 20px 40px}.wedding-experience .v1-temple-interior .garden-title{font-size:clamp(4.3rem,19vw,6rem)}.wedding-experience .v1-temple-interior .hero-kicker{font-size:1.2rem}.wedding-experience .v1-temple-interior .hero-detail{font-size:.875rem;gap:9px;letter-spacing:0}.wedding-experience .v1-temple-interior .garden-hero .hero-place{font-size:.875rem;max-width:330px}.v1-temple-interior .v1-walkers{width:150px;bottom:9%}
+.v1-temple-interior .v1-mandap{height:240px;margin-inline:-24px}.wedding-experience .v1-temple-interior .family-union-photo{width:88%}
+.wedding-experience .v1-temple-interior .ritual-grid{grid-template-columns:1fr;max-width:430px;gap:20px}.wedding-experience .v1-temple-interior .tradition-chapter{padding:65px 25px}.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card{padding:28px 24px}.wedding-experience .v1-temple-interior .tradition-chapter .ritual-grid .ritual-card h3{font-size:2.2rem}
+.wedding-experience .v1-temple-interior .date-display{gap:15px}.wedding-experience .v1-temple-interior .date-display>span{font-size:.875rem;letter-spacing:0}.wedding-experience .v1-temple-interior .countdown-inline{gap:20px}.wedding-experience .v1-temple-interior .countdown-inline div strong{font-size:2.7rem}
+.wedding-experience .v1-temple-interior .four-keepsakes{gap:24px 18px}.wedding-experience .v1-temple-interior .keepsake-card span{font-size:1.25rem}
+.wedding-experience .v1-temple-interior .venue-chapter{padding-top:65px;padding-bottom:220px}.v1-temple-interior .v1-venue-scenery{height:200px;width:140%;max-width:none;left:-20%}.wedding-experience .v1-temple-interior .rsvp-section{padding-bottom:100px}
+.wedding-experience .v1-temple-interior .garden-footer{min-height:950px;padding:50px 25px 500px}.wedding-experience .v1-temple-interior .garden-footer>.v1-lotus-lake{width:190%;left:-45%}.wedding-experience .v1-temple-interior .garden-footer h2{font-size:2.8rem}.wedding-experience .v1-temple-interior .garden-footer .footer-date{font-size:.875rem;max-width:290px;margin:15px auto 20px}
+.wedding-experience .v1-temple-interior .music-toggle,.v1-temple-interior .v1-motion-toggle{bottom:12px;padding:10px 12px}.v1-temple-interior .v1-motion-toggle{left:12px}.wedding-experience .v1-temple-interior .music-toggle{right:12px}
+}
+@media(max-width:370px){.wedding-experience .v1-temple-interior .garden-nav nav{gap:9px}.wedding-experience .v1-temple-interior .garden-nav nav a{font-size:.875rem}.wedding-experience .v1-temple-interior .garden-nav .rsvp-shortcut{padding-inline:13px}.wedding-experience .v1-temple-interior .countdown-inline{gap:14px}.wedding-experience .v1-temple-interior .date-display{gap:10px}.wedding-experience .v1-temple-interior .date-display strong{font-size:4.8rem}}
+.v1-temple-interior[data-motion=off] *{animation:none!important;transition:none!important}.v1-temple-interior[data-motion=off] :is(.family-union-photo,.keepsake-card,.v1-venue-scenery,.v1-lotus-lake){transform:none!important}.v1-temple-interior[data-motion=off] .garden-world{transform:translateX(-50%)}.v1-temple-interior[data-motion=off] .v1-walkers{transform:translateX(-50%)}
+@media(prefers-reduced-motion:reduce){.v1-temple-interior *{animation:none!important;transition:none!important}.v1-temple-interior :is(.family-union-photo,.keepsake-card,.v1-venue-scenery,.v1-lotus-lake){transform:none!important}.v1-temple-interior .garden-world,.v1-temple-interior .v1-walkers{transform:translateX(-50%)}}

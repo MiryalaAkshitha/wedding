@@ -1,0 +1,31 @@
+/* A dedicated response page, sharing the invitation's burgundy silk palette. */
+.wedding-experience.v3-red-invite .v3-classic-interior .v3-rsvp-main{border:0;box-shadow:none;background:none;width:min(850px,calc(100% - 36px));margin:0 auto}
+.v3-red-invite .v3-rsvp-page{padding:25px 0 85px;color:#f8e7c5}
+.v3-red-invite .v3-back-invitation{display:inline-flex;align-items:center;gap:10px;color:#efd4a2;text-decoration:none;font:15px/1.5 Arial,sans-serif;padding:9px 0;margin-bottom:18px}
+.v3-red-invite .v3-back-invitation span{font-size:24px}
+.v3-red-invite .v3-rsvp-card{border:1px solid #d3ac6988;background:linear-gradient(135deg,#862d3d,#692331);padding:36px clamp(20px,5vw,48px)}
+.v3-red-invite .v3-rsvp-kicker{text-align:center;font:12px/1.8 Arial,sans-serif;letter-spacing:2px;color:#e5c58d;margin:0 0 24px}
+.v3-red-invite .v3-rsvp-card>h1{text-align:center;font:400 clamp(54px,9vw,80px)/1.1 Georgia,serif;color:#ffedc9;letter-spacing:.045em;margin:0 0 20px}
+.v3-red-invite .v3-rsvp-welcome{text-align:center;font:23px/1.5 Georgia,serif;color:#f5dcac;margin:0 0 32px}
+.v3-red-invite .v3-reference-form{font:16px/1.5 Arial,sans-serif;display:grid;gap:22px;color:#f3dbb2}
+.v3-red-invite .v3-reference-form>label{display:grid;gap:9px;font:inherit}.v3-red-invite .v3-reference-form label>span:not([aria-hidden]){font-size:13px;color:#d8b894}
+.v3-red-invite .v3-reference-form :is(input:not([type=radio]):not([type=checkbox]),select,textarea){width:100%;min-width:0;border:1px solid #c5a06e88;border-radius:3px;background:#46131fed;color:#fff1d6;font:16px/1.5 Arial,sans-serif;padding:13px 15px;min-height:51px;color-scheme:dark}
+.v3-red-invite .v3-reference-form textarea{resize:vertical}.v3-red-invite .v3-reference-form input::placeholder,.v3-red-invite .v3-reference-form textarea::placeholder{color:#d4b6a0;opacity:1}
+.v3-red-invite .v3-reference-form fieldset{margin:0;min-width:0}
+.v3-red-invite .v3-attendance{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0;border:0;margin-bottom:5px!important}
+.v3-red-invite .v3-attendance label{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid #b7876166;border-radius:4px;min-height:66px;padding:12px 8px;font:14px/1.4 Arial,sans-serif;cursor:pointer}
+.v3-red-invite .v3-attendance label.selected{border-color:#e4bd7e;background:#dfbb8122}.v3-red-invite .v3-attendance label>input{position:absolute;opacity:0;width:1px;height:1px}.v3-red-invite .v3-attendance label>span{font-size:27px;line-height:1;color:#ffe4aa}
+.v3-red-invite .v3-attendance label:has(input:focus-visible){outline:2px solid #ffe5a0;outline-offset:4px}
+.v3-red-invite .v3-wedding-choice{border:1px solid #bc956d77;padding:16px 18px 20px}.v3-red-invite .v3-wedding-choice legend{font:15px/1.5 Arial,sans-serif;padding:0 8px}.v3-red-invite .v3-wedding-choice label,.v3-red-invite .v3-reference-form .v3-lunch-choice{display:flex;gap:13px;align-items:center;cursor:pointer}
+.v3-red-invite .v3-reference-form input[type=checkbox]{appearance:auto;accent-color:#e1bd7f;width:24px;height:24px;flex:0 0 24px}
+.v3-red-invite .v3-reference-form .v3-response-note{font:13px/1.6 Arial,sans-serif;color:#e3c8a4;margin:0}
+.v3-red-invite .v3-send-rsvp{display:flex;align-items:center;justify-content:center;gap:15px;border:1px solid #edce94;border-radius:3px;background:#e2bd80;color:#521a27;min-height:56px;padding:13px 20px;font:17px/1.4 Arial,sans-serif;cursor:pointer}.v3-red-invite .v3-send-rsvp span{font-size:28px;line-height:1}.v3-red-invite .v3-send-rsvp:disabled{opacity:.7;cursor:wait}
+.v3-red-invite .v3-rsvp-error{color:#ffd0c9;font:14px/1.5 Arial,sans-serif;margin:0}
+.v3-red-invite .v3-rsvp-event{border-top:1px solid #d3ac6966;margin-top:30px;padding-top:24px;display:flex;gap:16px;color:#e2c393;font:14px/1.6 Arial,sans-serif}.v3-red-invite .v3-rsvp-event>.v3-icon{margin-top:4px;width:23px;height:23px}.v3-red-invite .v3-rsvp-event p{font:inherit;color:inherit;margin:0 0 6px}.wedding-experience.v3-red-invite .v3-rsvp-event h2{font:19px/1.5 Georgia,serif;color:#ffedc9;margin:4px 0 8px}
+.v3-red-invite .v3-rsvp-success{text-align:center;padding:35px 0}.v3-red-invite .v3-rsvp-success>span{font-size:50px;color:#ffe5a0}.wedding-experience.v3-red-invite .v3-rsvp-success h2{font:30px/1.3 Georgia,serif;color:#ffe5a0}.v3-red-invite .v3-rsvp-success p{font:16px/1.5 Arial,sans-serif;color:#efd4a2}
+.v3-red-invite .v3-reference-form .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.wedding-experience.v3-red-invite .garden-nav nav a[aria-current=page]{text-underline-offset:7px;text-decoration:underline;text-decoration-thickness:1px}
+.wedding-experience.v3-red-invite .v3-footer-signature{display:flex;flex-wrap:nowrap;gap:clamp(6px,1.4vw,20px);white-space:nowrap;font-size:clamp(9px,2.55vw,15px)}
+.wedding-experience.v3-red-invite .v3-footer-signature p{width:auto;flex:0 0 auto}.wedding-experience.v3-red-invite .v3-footer-signature time{order:initial;flex:0 0 auto}.wedding-experience.v3-red-invite .v3-footer-star{font-size:1.25em;flex:0 0 auto}
+@media(max-width:600px){.v3-red-invite .v3-rsvp-page{padding-top:12px}.v3-red-invite .v3-rsvp-card{padding:28px 17px}.v3-red-invite .v3-rsvp-kicker{font-size:10px;letter-spacing:1.2px;margin-bottom:20px}.v3-red-invite .v3-rsvp-welcome{font-size:20px;margin-bottom:26px}.v3-red-invite .v3-attendance{gap:9px}.v3-red-invite .v3-attendance label{font-size:13px;gap:5px;min-height:62px}.v3-red-invite .v3-reference-form{gap:20px}.v3-red-invite .v3-rsvp-event{gap:10px;font-size:13px}}
+.v3-red-invite .v3-reference-form>label{display:block}.v3-red-invite .v3-reference-form>label :is(input:not([type=radio]):not([type=checkbox]),select,textarea){display:block;margin-top:9px}

@@ -1,0 +1,71 @@
+/* Reference palette: shaded wine red, light cream and restrained antique gold. */
+.wedding-experience.v3-red-invite{--invite-cream:#fff0d2;--invite-gold:#dfbf8c;background:radial-gradient(at 30% 0%,#973847 0,transparent 55%),#4e1622;color:#f6e6c9}
+.wedding-experience.v3-red-invite .v3-classic-interior main{background:radial-gradient(ellipse at 18% 5%,#8a304044,transparent 65%),#5e1c2a;border-color:#c6a16a}
+.wedding-experience.v3-red-invite .v3-classic-interior .garden-nav{background:#4e1622f2;border-color:#dfb87933}
+.wedding-experience.v3-red-invite .si-opening{--si-cream:#fff2d9;--si-gold:#e1bc7a;background:#43151e}
+.wedding-experience.v3-red-invite .si-curtain{background:repeating-linear-gradient(90deg,#00000018 0,transparent 5%,#ffffff07 8%,#00000022 14%),radial-gradient(ellipse at 100% 30%,#a33846 0,#681a28 65%,#43151e 100%);box-shadow:inset -10px 0 35px #24091233}
+.wedding-experience.v3-red-invite .si-opening-out{background:transparent}
+.wedding-experience.v3-red-invite .si-opening-copy h1{color:#fff2d9}.wedding-experience.v3-red-invite .si-opening-copy h1 em{color:#e1bc7a}.wedding-experience.v3-red-invite .si-opening-date{color:#f8e5bc}.wedding-experience.v3-red-invite .si-opening-note{color:#d4b999}
+.wedding-experience.v3-red-invite .si-primary{background:#dfb879;color:#4e1924;border-color:#e5c890}
+.wedding-experience.v3-red-invite .v3-classic-interior :is(.garden-title,.v3-bride-name){color:var(--invite-cream)}
+.wedding-experience.v3-red-invite .v3-classic-interior .garden-hero .hero-kicker,.wedding-experience.v3-red-invite .v3-family-line,.wedding-experience.v3-red-invite .v3-short-invitation{color:#f6e7cb}
+.wedding-experience.v3-red-invite .v3-classic-interior .garden-hero-copy .opening-telugu,.wedding-experience.v3-red-invite .v3-family-line>span,.wedding-experience.v3-red-invite .v3-weds{color:var(--invite-gold)}
+.wedding-experience.v3-red-invite .day-chapter>.v3-wedding-date{color:var(--invite-cream)}.wedding-experience.v3-red-invite .v3-wedding-date span{color:var(--invite-gold)}.wedding-experience.v3-red-invite .day-chapter>h2{color:var(--invite-gold)}
+.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket{background:#4e162233;border-color:#dfb87955}.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket .telugu{color:var(--invite-gold)}.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket :is(h3,strong){color:var(--invite-cream)}
+.wedding-experience.v3-red-invite .v3-classic-interior .v3-short-venue h2{color:var(--invite-cream)}.wedding-experience.v3-red-invite .v3-short-venue p{color:#e0c7ac}.wedding-experience.v3-red-invite .v3-short-venue .v3-countdown{color:var(--invite-gold)}
+.wedding-experience.v3-red-invite .v3-classic-interior .garden-button.light,.wedding-experience.v3-red-invite .garden-nav .rsvp-shortcut,.wedding-experience.v3-red-invite .v3-send-rsvp{background:#dfb879;border-color:#dfb879;color:#4e1924}
+.wedding-experience.v3-red-invite .v3-classic-interior .v3-rsvp-main{background:none}
+.wedding-experience.v3-red-invite .v3-rsvp-card{background:radial-gradient(ellipse at 0 0,#97384766,transparent 70%),#5e1c2a;border-color:#c9a05d80}
+.wedding-experience.v3-red-invite .v3-rsvp-card>h1,.wedding-experience.v3-red-invite .v3-rsvp-event h2{color:var(--invite-cream)}.wedding-experience.v3-red-invite .v3-rsvp-kicker{color:var(--invite-gold)}.wedding-experience.v3-red-invite .v3-rsvp-welcome{color:#f6e7cb}.wedding-experience.v3-red-invite .v3-reference-form{color:#f6e6c9}.wedding-experience.v3-red-invite .v3-rsvp-event{color:#e0c7ac}
+.wedding-experience.v3-red-invite .v3-reference-form :is(input:not([type=radio]):not([type=checkbox]),textarea){background:#481823;color:#fff0d2;border-color:#bc945466}
+.wedding-experience.v3-red-invite .v3-reference-form input[type=checkbox]{accent-color:#dfb879}.wedding-experience.v3-red-invite .v3-attendance label.selected{border-color:#dfb879;background:#dfb87915}
+.wedding-experience.v3-red-invite .v3-footer-signature{color:#f6e6c9}.wedding-experience.v3-red-invite .v3-footer-signature p span{color:#fff0d2}.wedding-experience.v3-red-invite .v3-footer-star{font-size:12px;color:#dfbf8c}
+.wedding-experience.v3-red-invite .v3-rsvp-cta .heart{width:16px;height:16px}.wedding-experience.v3-red-invite .v3-attendance label>span,.wedding-experience.v3-red-invite .v3-send-rsvp span{font-size:20px}.wedding-experience.v3-red-invite .v3-icon{width:17px;height:17px}
+.wedding-experience.v3-red-invite [data-motion=on] .v3-rsvp-cta .heart{animation:v3-quiet-heart 4s ease-in-out infinite}.wedding-experience.v3-red-invite [data-motion=on] .v3-footer-star{animation:v3-quiet-star 6s ease-in-out infinite}
+@keyframes v3-quiet-heart{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}@keyframes v3-quiet-star{0%,100%{opacity:.8}50%{opacity:1}}
+.wedding-experience.v3-red-invite .v3-scroll-cue{width:28px;height:36px}.wedding-experience.v3-red-invite .v3-scroll-cue svg{width:24px;height:30px}
+.wedding-experience.v3-red-invite .v1-live.visible :is(.v1-letter,.v1-word){animation-name:v3-quiet-text;animation-duration:1s;animation-timing-function:ease-out}
+@keyframes v3-quiet-text{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.wedding-experience.v3-red-invite .v3-rsvp-cta .heart,.wedding-experience.v3-red-invite .v3-footer-star{animation:none!important}}
+/* Lift the red field and separate cream focal text from richer gold accents. */
+.wedding-experience.v3-red-invite{--invite-gold:#edc781;background:radial-gradient(ellipse at 30% 8%,#a94050 0,transparent 65%),#651e2e}
+.wedding-experience.v3-red-invite .v3-classic-interior main{background:radial-gradient(ellipse at 35% 5%,#a33846 0,#852b3c 52%,#712333 100%)}
+.wedding-experience.v3-red-invite .si-curtain{background:repeating-linear-gradient(90deg,#00000016 0,transparent 5%,#ffffff09 8%,#00000020 14%),radial-gradient(ellipse at 100% 30%,#b34553 0,#8f2d3f 60%,#651e2e 100%)}
+.wedding-experience.v3-red-invite .v3-rsvp-card{background:radial-gradient(ellipse at 20% 0,#a33846 0,#852b3c 55%,#712333 100%)}
+.wedding-experience.v3-red-invite .v3-classic-interior .v3-rsvp-main{background:none}
+.wedding-experience.v3-red-invite .v1-live.visible :is(.v1-letter,.v1-word){animation:v3-word-arrive 1.2s cubic-bezier(.2,.7,.3,1) both,v3-word-drift 4.8s ease-in-out infinite;animation-delay:var(--delay),calc(1.4s + var(--delay))}
+.wedding-experience.v3-red-invite .visible h2>.v1-live{animation:none}
+@keyframes v3-word-arrive{from{opacity:0;transform:translateY(17px) rotate(-2deg)}65%{opacity:1;transform:translateY(-3px) rotate(.5deg)}to{opacity:1;transform:none}}
+@keyframes v3-word-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.v3-red-invite .v3-wedding-date>span>.v1-live,.v3-red-invite .v3-wedding-date time>.v1-live{font:inherit;letter-spacing:inherit;color:inherit}
+@media(prefers-reduced-motion:reduce){.wedding-experience.v3-red-invite .v1-live.visible :is(.v1-letter,.v1-word){animation:none!important}}
+.wedding-experience.v3-red-invite .v3-family-line>.v1-live{font:inherit;letter-spacing:0;color:inherit;display:inline-block;margin:0}
+.wedding-experience.v3-red-invite .v3-wedding-date .v1-live span{font:inherit;letter-spacing:inherit;color:inherit;display:inline-block}
+/* Use the reference's measured wine palette and diagonal shaded card. */
+.wedding-experience.v3-red-invite{background:radial-gradient(at 30% 0%,#973847 0,transparent 55%),#4e1622}
+.wedding-experience.v3-red-invite .v3-classic-interior main{background:linear-gradient(130deg,#7f2938 0%,#6c2130 48%,#5e1c2a 100%)}
+.wedding-experience.v3-red-invite .si-curtain{background:repeating-linear-gradient(90deg,#00000015 0,transparent 5%,#ffffff05 8%,#0000001c 14%),radial-gradient(ellipse at 100% 35%,#a33846 0%,#681a28 65%,#43151e 100%)}
+.wedding-experience.v3-red-invite .v3-rsvp-card{background:linear-gradient(130deg,#7f2938,#5e1c2a)}
+.wedding-experience.v3-red-invite .v3-classic-interior .v3-rsvp-main{background:none}
+.wedding-experience.v3-red-invite .v3-family-line>.v1-live{font-weight:400;text-transform:none;letter-spacing:0}
+.wedding-experience.v3-red-invite .v3-attendance label>span,.wedding-experience.v3-red-invite .v3-send-rsvp span{font-size:16px;line-height:1;font-weight:400}
+.v3-red-invite .v3-gold-sparkles{position:fixed;inset:0;pointer-events:none;z-index:15;overflow:hidden}
+.v3-red-invite .v3-gold-sparkles svg{position:absolute;left:var(--spark-x);bottom:-12px;width:var(--spark-size);height:var(--spark-size);fill:#edc781;opacity:0;filter:drop-shadow(0 0 3px #e1bc7a66);animation:v3-spark-rise var(--spark-time) linear var(--spark-delay) infinite}
+@keyframes v3-spark-rise{0%{opacity:0;transform:translate3d(0,0,0) scale(.7)}12%{opacity:.5}45%{opacity:.7}75%{opacity:.35}100%{opacity:0;transform:translate3d(var(--spark-drift),-75dvh,0) scale(1)}}
+.v3-red-invite [data-motion=off] .v3-gold-sparkles{display:none}
+@media(prefers-reduced-motion:reduce){.v3-red-invite .v3-gold-sparkles{display:none}}
+/* Keep animated time digits large; only the AM/PM suffix uses the small size. */
+.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket strong{font-size:44px;line-height:1.15}
+.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket strong .v1-live,.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket strong .v1-live span{font:inherit;color:inherit}
+@media(max-width:760px){.wedding-experience.v3-red-invite .v3-classic-interior .event-ticket strong{font-size:36px}}
+/* Lift and fade the entrance garland as soon as the curtains part. */
+.wedding-experience.v3-red-invite .si-opening>.toran{transition:opacity .45s ease,transform .75s ease}
+.wedding-experience.v3-red-invite .si-opening-out>.toran{opacity:0;transform:translateY(-100%)}
+/* Compact RSVP heading, confirmation and rounded action. */
+.wedding-experience.v3-red-invite .v3-rsvp-card>h1{font-size:clamp(48px,8vw,68px);margin-bottom:16px}
+.wedding-experience.v3-red-invite .v3-rsvp-card:has(.v3-rsvp-success) .v3-rsvp-welcome{display:none}
+.wedding-experience.v3-red-invite .v3-rsvp-success{padding:8px 0 12px}
+.wedding-experience.v3-red-invite .v3-rsvp-success>span{font-size:22px;display:block;line-height:1.2;margin:4px auto 10px}
+.wedding-experience.v3-red-invite .v3-rsvp-success h2{font-size:26px;margin:0 auto 10px}
+.wedding-experience.v3-red-invite .v3-rsvp-success p{margin:0 auto;max-width:390px}
+.wedding-experience.v3-red-invite .v3-send-rsvp{width:max-content;min-width:195px;max-width:100%;justify-self:center;border-radius:999px;padding:12px 25px;min-height:48px;font-size:16px}

@@ -29,19 +29,9 @@ Put your files in `public/` and update the paths under `images` and `music` in `
 
 The cut-out hands, feet and leaves from the earlier design are kept in `art-unused/`. They aren't part of the site.
 
-## Connect RSVP to Google Sheets
+## Publish
 
-Until this is done, the RSVP page says setup is pending and saves nothing.
-
-1. Create a private Google Sheet and open Extensions > Apps Script.
-2. Paste in `setup/google-apps-script.gs` and replace `REPLACE_WITH_YOUR_SPREADSHEET_ID` with the ID from the Sheet's URL.
-3. Choose Deploy > New deployment > Web app. Set Execute as: Me, and Who has access: Anyone.
-4. Copy the URL ending in `/exec` into `public/config.js`.
-5. Send a test RSVP and confirm that one row appears in the Sheet.
-
-## Publish on GitHub Pages
-
-The site is at https://miryalaakshitha.github.io/wedding/
+The site is at https://theakstudio.in/wedding/
 
 To publish your latest changes, run:
 
@@ -49,4 +39,4 @@ To publish your latest changes, run:
 npm run deploy
 ```
 
-This builds the site and updates the `gh-pages` branch. Save your source too with `git add -A`, `git commit` and `git push`.
+This builds the site, copies it into `public/wedding` in the AK-studio repo (expected at `../AK/AK-studio`), and pushes that repo's `master` branch, which deploys theakstudio.in. It stops without publishing if AK-studio has uncommitted changes or isn't on `master`. Save your source too with `git add -A`, `git commit` and `git push`.

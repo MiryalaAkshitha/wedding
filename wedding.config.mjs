@@ -9,23 +9,23 @@ export const theme = {
 };
 
 export const wedding = {
-  groom: { name: 'Raja', parentsLabel: 'Son of', parents: ['Raja Dad', '& Raja Mom'] },
-  bride: { name: 'Rani', parentsLabel: 'Daughter of', parents: ['Rani Dad', '& Rani Mom'] },
+  // parents: add them like ['Father name', '& Mother name']. While empty, the line is hidden.
+  groom: { name: 'Krishna Vamshi', parentsLabel: 'Son of', parents: [] },
+  bride: { name: 'Harika', parentsLabel: 'Daughter of', parents: [] },
 
-  date: '2027-02-14', // YYYY-MM-DD
+  date: '2026-11-21', // main wedding day, YYYY-MM-DD
   utcOffset: '+05:30', // time zone of the venue (India is +05:30)
   timeNote: 'All times are India Standard Time.',
   place: 'Hyderabad', // short place shown on the opening screen
 
-  // 24-hour times. Add or remove events freely; set telugu to '' to hide that line.
+  // Every function, in date order. Times are 24-hour. The one marked main: true is shown large and drives the countdown.
   events: [
-    { telugu: 'సుముహూర్తం', title: 'Wedding ceremony', time: '07:30' },
-    { telugu: 'వివాహ విందు', title: 'Wedding lunch', time: '12:00' },
+    { date: '2026-11-21', title: 'Marriage', telugu: 'సుముహూర్తం', time: '10:04', note: '', place: 'KBR Convention', map: 'https://maps.app.goo.gl/6szL4xWuC4VZwLhQ7', main: true },
   ],
 
   venue: {
-    name: ['Your Venue Name', 'Hall & Gardens'],
-    address: ['123 Venue Road', 'Hyderabad, Telangana'],
+    name: ['KBR Convention'],
+    address: ['Chandeeshwari Colony, Mansoorabad', 'Hyderabad, Telangana 500068'],
   },
 
   text: {
@@ -36,7 +36,7 @@ export const wedding = {
     blessing: 'With divine grace and the blessings of our elders',
     invitation: 'We solicit your gracious presence, along with your family and friends, on the auspicious occasion of our wedding.',
     presence: 'Your presence and blessings will make our day truly complete.',
-    celebrationHeading: 'The wedding celebration',
+    celebrationHeading: 'The wedding',
   },
 
   // Put your files in public/ and point to them here. Keep similar proportions for the best fit.
@@ -45,6 +45,8 @@ export const wedding = {
     ganesh: './art/ganesh.webp', // line art used for the opening animation and small marks (white on transparent)
     couple: './art/couple.webp', // couple standing above the footer (transparent background)
     emblem: './art/emblem.webp', // emblem beside the names on the opening screen (transparent background)
+    marriage: './art/couple-blessing.webp', // small picture beside Marriage (transparent background)
+    marriageAlt: 'The bride and groom sitting together, each placing a hand on the other’s head',
     hero: './version-three/temple-kalyanam-sketch.webp', // large centre illustration (3:2)
     heroAlt: 'Illustration of a South Indian temple wedding',
     corner: './version-three/banana-jasmine-corner.webp', // top corner garland (2:3)

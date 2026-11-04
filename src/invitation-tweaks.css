@@ -109,6 +109,34 @@ body,.wedding-experience.v3-red-invite{background:#f8f0e1}
 @keyframes soft-sway{0%,100%{rotate:-.8deg}50%{rotate:.8deg}}
 .wedding-experience.v3-red-invite [data-motion=on] .couple-figure.visible{animation:soft-float 8s ease-in-out 1.2s infinite}
 
+/* Schedule: functions in pairs, with the marriage as a full-width centrepiece */
+.fn-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:760px;margin:18px auto 8px;padding-inline:16px;text-align:left}
+.fn-card{display:flex;align-items:center;gap:16px;min-width:0;padding:16px;border:1px solid #d3ac6966;border-radius:8px;background:#4e162233}
+.fn-date{flex:none;width:68px;padding:9px 0 8px;border:1px solid #dfb87966;border-radius:34px 34px 6px 6px;text-align:center}
+.wedding-experience.v3-red-invite .fn-date span{display:block;color:#dfbf8c;font-family:var(--f-caps)!important;font-size:10px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase}
+.wedding-experience.v3-red-invite .fn-date strong{display:block;color:#fff0d2;font-size:32px;font-weight:500;line-height:1.1}
+.fn-body{min-width:0}
+.wedding-experience.v3-red-invite .fn-card h3{margin:0;color:#fff0d2;font-size:23px;font-weight:500;line-height:1.15}
+.wedding-experience.v3-red-invite .fn-time{margin:3px 0 0;color:#ffe5a0;font-size:21px;font-weight:500;line-height:1.2}
+.wedding-experience.v3-red-invite .fn-time span{font-family:var(--f-caps)!important;font-size:11px;letter-spacing:.06em}
+.wedding-experience.v3-red-invite .fn-note{margin:2px 0 0;color:#f6e7cb;font-size:17px;font-style:italic;line-height:1.25}
+.wedding-experience.v3-red-invite a.fn-place{display:inline-flex;align-items:center;gap:6px;min-height:32px;margin-top:3px;color:#ead2a3;font-size:17px;font-weight:500;line-height:1.2;text-decoration:underline;text-decoration-color:#dfb87966;text-underline-offset:3px}
+.fn-place svg{flex:none;width:15px;height:15px}
+.wedding-experience.v3-red-invite .fn-place span{color:inherit}
+.fn-card.fn-main{grid-column:1/-1;flex-direction:column;gap:10px;padding:26px 16px 22px;border:1px solid #dfb879;outline:1px solid #dfb87966;outline-offset:3px;background:#4e162266;text-align:center}
+.fn-main .fn-date{display:flex;align-items:baseline;justify-content:center;gap:8px;width:auto;padding:0;border:0}
+.wedding-experience.v3-red-invite .fn-main .fn-date span{font-size:12px}
+.wedding-experience.v3-red-invite .fn-main .fn-date strong{font-size:24px}
+.wedding-experience.v3-red-invite .fn-main .telugu{margin:0 0 2px;color:#ffe5a0;font-size:24px;line-height:1.4}
+.wedding-experience.v3-red-invite .fn-main h3{font-family:var(--f-script)!important;font-size:clamp(46px,7vw,62px);font-weight:400;line-height:1.1}
+.wedding-experience.v3-red-invite .fn-main .fn-time{margin-top:6px;font-size:34px}
+.wedding-experience.v3-red-invite .fn-main .fn-place{margin-top:6px;font-size:20px}
+@media(max-width:640px){
+ .fn-list{grid-template-columns:minmax(0,1fr);padding-inline:0}
+ .fn-card{gap:12px;padding:12px}
+ .fn-date{width:56px}
+}
+
 /* Cream buttons on burgundy */
 .wedding-experience.v3-red-invite .si-primary,.wedding-experience.v3-red-invite .v3-classic-interior .garden-button.light,.wedding-experience.v3-red-invite .garden-nav .rsvp-shortcut,.wedding-experience.v3-red-invite .v3-send-rsvp{background:#fff0d2;border-color:#fff0d2;color:#4e1622}
 
@@ -125,3 +153,24 @@ body,.wedding-experience.v3-red-invite{background:#f8f0e1}
 .wedding-experience.v3-red-invite .garden-footer .v3-footer-signature :is(p,p *,time){font-size:17px}
 .wedding-experience.v3-red-invite .garden-footer .v3-footer-signature{flex-wrap:wrap;justify-content:center}
 .wedding-experience.v3-red-invite .v3-reference-form :is(input,textarea){font-variant-numeric:lining-nums!important}
+
+/* The couple's small picture beside Marriage. */
+.fn-card.fn-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto;align-content:center;align-items:center;gap:8px 18px;padding-inline:22px}
+.fn-main .fn-date{grid-column:1;grid-row:1;align-self:end}
+.fn-main .fn-body{grid-column:1;grid-row:2;align-self:start}
+.fn-couple{grid-column:2;grid-row:1/3;display:block;width:100%;height:auto;filter:drop-shadow(0 6px 10px #0000004d)}
+.wedding-experience.v3-red-invite [data-motion=on] .fn-couple{animation:couple-sway 7s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes couple-sway{0%,100%{translate:0 2px;rotate:-.7deg}50%{translate:0 -4px;rotate:.7deg}}
+@media(max-width:760px){
+ .fn-card.fn-main{grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:6px 8px;padding:20px 12px 18px}
+ .wedding-experience.v3-red-invite .fn-main h3{font-size:clamp(30px,9.8vw,40px)}
+ .wedding-experience.v3-red-invite .fn-main .telugu{font-size:20px}
+ .wedding-experience.v3-red-invite .fn-main .fn-time{font-size:26px}
+ .wedding-experience.v3-red-invite .fn-main .fn-place{font-size:16px}
+}
+.wedding-experience.v3-red-invite .fn-main .fn-place{white-space:nowrap;gap:4px}
+@media(max-width:360px){
+ .wedding-experience.v3-red-invite .fn-main .fn-place{font-size:13px}
+ .wedding-experience.v3-red-invite .fn-main .telugu{font-size:18px}
+ .wedding-experience.v3-red-invite .fn-main .fn-time{font-size:23px}
+}

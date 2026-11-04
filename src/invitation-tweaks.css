@@ -37,9 +37,9 @@ body,.wedding-experience.v3-red-invite{background:#f8f0e1}
 @keyframes si-ganesh-stage{0%{opacity:0;transform:translate(-50%,-50%) scale(.9)}10%{opacity:1}58%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-56%) scale(1.14)}}
 @keyframes si-ganesh-halo{0%,12%{opacity:0;transform:scale(.7)}50%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.25)}}
 
-/* Couple standing on the footer line */
+/* Couple walking above the footer line */
 .wedding-experience.v3-red-invite .v3-classic-interior .day-chapter{padding-bottom:0}
-.couple-figure{display:block;width:auto;height:clamp(250px,32vw,340px);margin:30px auto 0;filter:drop-shadow(0 6px 14px #24091266)}
+.couple-figure{display:block;width:min(300px,75%);height:auto;margin:30px auto 14px;filter:drop-shadow(0 6px 14px #24091266)}
 
 /* Opening screen: plain burgundy, emblem on one side, small garland */
 .wedding-experience.v3-red-invite .si-curtain{background:radial-gradient(ellipse at 100% 45%,var(--opening) 0,var(--opening) 45%,var(--opening-deep) 100%);box-shadow:none}

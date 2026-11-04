@@ -43,7 +43,7 @@ export const wedding = {
   images: {
     toran: './art/toran.webp', // small garland on the opening screen, repeats across the width
     ganesh: './art/ganesh.webp', // line art used for the opening animation and small marks (white on transparent)
-    couple: './art/couple.webp', // couple standing above the footer (transparent background)
+    couple: './art/couple-steps.webp', // couple walking hand in hand above the footer (transparent background)
     emblem: './art/emblem.webp', // emblem beside the names on the opening screen (transparent background)
     marriage: './art/couple-blessing.webp', // small picture beside Marriage (transparent background)
     marriageAlt: 'The bride and groom sitting together, each placing a hand on the other’s head',

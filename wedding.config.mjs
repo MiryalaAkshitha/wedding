@@ -10,22 +10,22 @@ export const theme = {
 
 export const wedding = {
   // parents: add them like ['Father name', '& Mother name']. While empty, the line is hidden.
-  groom: { name: 'Krishna Vamshi', parentsLabel: 'Son of', parents: [] },
-  bride: { name: 'Harika', parentsLabel: 'Daughter of', parents: [] },
+  groom: { name: 'Bhaskar Reddy', parentsLabel: 'Elder son of', parents: ['Smt. & Sri Rakonda Jayamma -', 'Prabhakar Reddy, Bompalli Vill.'] },
+  bride: { name: 'Teja Sree', parentsLabel: 'Elder daughter of', parents: ['Smt. Sara Jayasri - Late Nagarjuna'] },
 
-  date: '2026-11-21', // main wedding day, YYYY-MM-DD
+  date: '2026-11-13', // main wedding day, YYYY-MM-DD
   utcOffset: '+05:30', // time zone of the venue (India is +05:30)
   timeNote: 'All times are India Standard Time.',
-  place: 'Hyderabad', // short place shown on the opening screen
+  place: 'Shadnagar', // short place shown on the opening screen
 
   // Every function, in date order. Times are 24-hour. The one marked main: true is shown large and drives the countdown.
   events: [
-    { date: '2026-11-21', title: 'Marriage', telugu: 'సుముహూర్తం', time: '10:04', note: '', place: 'KBR Convention', map: 'https://maps.app.goo.gl/6szL4xWuC4VZwLhQ7', main: true },
+    { date: '2026-11-13', title: 'Marriage', telugu: 'సుముహూర్తం', time: '10:27', note: 'Dhanassu Lagnam', place: 'Kuntla Rami Reddy Garden', map: 'https://www.google.com/maps/search/?api=1&query=Kuntla+Rami+Reddy+Garden+Bypass+Road+Chetanpally+Gate+Shadnagar', main: true },
   ],
 
   venue: {
-    name: ['KBR Convention'],
-    address: ['Chandeeshwari Colony, Mansoorabad', 'Hyderabad, Telangana 500068'],
+    name: ['Kuntla Rami Reddy Garden'],
+    address: ['Bypass Road, Chetanpally Gate, Shadnagar', 'Ranga Reddy Dist.'],
   },
 
   text: {
@@ -34,7 +34,7 @@ export const wedding = {
     openingNote: 'With divine grace and the blessings of our elders',
     telugu: 'శ్రీరస్తు శుభమస్తు అవిఘ్నమస్తు', // set to '' to hide
     blessing: 'With divine grace and the blessings of our elders',
-    invitation: 'We solicit your gracious presence, along with your family and friends, on the auspicious occasion of our wedding.',
+    invitation: 'We solicit your gracious presence with family and friends on the auspicious occasion of the marriage of our elder daughter Teja Sree with Bhaskar Reddy.',
     presence: 'Your presence and blessings will make our day truly complete.',
     celebrationHeading: 'The wedding',
   },

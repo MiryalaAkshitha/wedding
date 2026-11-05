@@ -33,7 +33,7 @@ export function recolor(css, theme) {
 }
 
 export default function themePlugin(theme, wedding) {
-  const title = `${wedding.groom.name} weds ${wedding.bride.name}`;
+  const title = `${wedding.bride.name} weds ${wedding.groom.name}`;
   return {
     name: 'wedding-theme',
     enforce: 'pre',

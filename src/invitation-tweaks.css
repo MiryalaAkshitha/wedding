@@ -174,3 +174,8 @@ body,.wedding-experience.v3-red-invite{background:#f8f0e1}
  .wedding-experience.v3-red-invite .fn-main .telugu{font-size:18px}
  .wedding-experience.v3-red-invite .fn-main .fn-time{font-size:23px}
 }
+
+/* Invited by, under the footer signature */
+.wedding-experience.v3-red-invite .garden-footer .v3-invited-by{margin-top:26px;text-align:center}
+.wedding-experience.v3-red-invite .garden-footer .v3-invited-by p{margin:0;font:17px/1.6 Georgia,serif;color:#f6e6c9}
+.wedding-experience.v3-red-invite .garden-footer .v3-invited-by .v3-invited-label{font:11px/1.8 Arial,sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--invite-gold,#dfbf8c);margin-bottom:6px}

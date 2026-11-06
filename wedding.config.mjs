@@ -10,8 +10,10 @@ export const theme = {
 
 export const wedding = {
   // parents: add them like ['Father name', '& Mother name']. While empty, the line is hidden.
-  groom: { name: 'Krishna Vamshi', parentsLabel: 'Son of', parents: [] },
-  bride: { name: 'Harika', parentsLabel: 'Daughter of', parents: [] },
+  // Bride-side invitation: the bride is named first everywhere.
+  bride: { name: 'Harika', parentsLabel: 'Only daughter of', parents: ['Smt. & Sri Vuthunuri Jyothi - Maruthi'] },
+  groom: { name: 'Krishna Vamshi', parentsLabel: 'Only son of', parents: ['Smt. & Sri Muthyapu Nagarani - Mohan'] },
+  invitedBy: ['Smt. Vuthunuri Prameela', 'Sri Vuthunuri Hanmaiah'], // shown at the bottom; set to [] to hide
 
   date: '2026-11-21', // main wedding day, YYYY-MM-DD
   utcOffset: '+05:30', // time zone of the venue (India is +05:30)

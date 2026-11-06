@@ -11,9 +11,9 @@ export const theme = {
 export const wedding = {
   // parents: add them like ['Father name', '& Mother name']. While empty, the line is hidden.
   // Bride-side invitation: the bride is named first everywhere.
-  bride: { name: 'Harika', parentsLabel: 'Daughter of', parents: ['Smt. & Sri Vuthunuri Jyothi - Maruthi'] },
-  groom: { name: 'Krishna Vamshi', parentsLabel: 'Son of', parents: ['Smt. & Sri Muthyapu Nagarani - Mohan'] },
-  invitedBy: ['Vuthunuri Jyothi', 'Vuthunuri Maruthi'], // shown at the bottom; set to [] to hide
+  bride: { name: 'Harika', parentsLabel: '', parents: ['D/o. Smt. & Sri Vuthunuri Jyothi - Maruthi'] },
+  groom: { name: 'Krishna Vamshi', parentsLabel: '', parents: ['S/o. Smt. & Sri Muthyapu Nagarani - Mohan'] },
+  invitedBy: ['Vuthunuri Jyothi', 'Vuthunuri Maruthi'], // shown in the footer above the signature; set to [] to hide
 
   date: '2026-11-21', // main wedding day, YYYY-MM-DD
   utcOffset: '+05:30', // time zone of the venue (India is +05:30)
@@ -22,11 +22,12 @@ export const wedding = {
 
   // Every function, in date order. Times are 24-hour. The one marked main: true is shown large and drives the countdown.
   events: [
-    { date: '2026-11-21', title: 'Marriage', telugu: 'సుముహూర్తం', time: '10:04', note: '', place: 'KBR Convention', map: 'https://maps.app.goo.gl/6szL4xWuC4VZwLhQ7', main: true },
+    { date: '2026-11-21', title: 'Marriage', telugu: 'సుముహూర్తం', time: '10:04', note: '', place: 'Lunch Follows', map: '', main: true },
   ],
 
   venue: {
     name: ['KBR Convention'],
+    map: 'https://maps.app.goo.gl/6szL4xWuC4VZwLhQ7', // used by "Get directions"
     address: ['Chandeeshwari Colony, Mansoorabad', 'Hyderabad, Telangana 500068'],
   },
 
@@ -38,7 +39,7 @@ export const wedding = {
     blessing: 'With divine grace and the blessings of our elders',
     invitation: 'We solicit your gracious presence, along with your family and friends, on the auspicious occasion of our wedding.',
     presence: 'Your presence and blessings will make our day truly complete.',
-    celebrationHeading: 'The wedding',
+    celebrationHeading: '', // set a heading like 'The wedding' to show one above the events
   },
 
   // Put your files in public/ and point to them here. Keep similar proportions for the best fit.

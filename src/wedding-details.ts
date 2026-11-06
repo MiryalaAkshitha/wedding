@@ -21,8 +21,8 @@ const fullAddress=venue.address.join(', ');
 const location=`${venue.name.join(' ')}, ${fullAddress}`;
 const summary=`${couple} — Wedding`;
 const describe=(e:{time:string;note:string})=>{const c=clock(e.time);return `${c.time} ${c.period}.${e.note?` ${e.note}.`:''} ${timeNote}`};
-export const mapsUrl=mainEvent.map;
+export const mapsUrl=mainEvent.map||venue.map;
 export const googleCalendarUrl='https://calendar.google.com/calendar/render?'+new URLSearchParams({action:'TEMPLATE',text:summary,dates:`${stamp(weddingStart)}/${stamp(end)}`,location,details:describe(mainEvent)}).toString();
 const ics=(s:string)=>s.replace(/[\\,;]/g,m=>'\\'+m);
 // The calendar file holds every function; Google's link can only add one, so it adds the marriage.
-export const icsUrl='data:text/calendar;charset=utf-8,'+encodeURIComponent(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding Invitation//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',...events.flatMap(e=>{const from=instant(e);return ['BEGIN:VEVENT',`UID:wedding-${e.date}-${groom.name}-${bride.name}@invitation`.replace(/\s/g,''),`DTSTAMP:${stamp(from)}`,`DTSTART:${stamp(from)}`,`DTEND:${stamp(new Date(from.getTime()+TWO_HOURS))}`,`SUMMARY:${ics(`${couple} — ${e.title}`)}`,`LOCATION:${ics(e.main?location:e.place)}`,`DESCRIPTION:${ics(`${describe(e)} Directions: ${e.map}`)}`,'END:VEVENT']}),'END:VCALENDAR'].map(line=>line.replace(/(.{70})(?=.)/gu,'$1\r\n ')).join('\r\n'));
+export const icsUrl='data:text/calendar;charset=utf-8,'+encodeURIComponent(['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding Invitation//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',...events.flatMap(e=>{const from=instant(e);return ['BEGIN:VEVENT',`UID:wedding-${e.date}-${groom.name}-${bride.name}@invitation`.replace(/\s/g,''),`DTSTAMP:${stamp(from)}`,`DTSTART:${stamp(from)}`,`DTEND:${stamp(new Date(from.getTime()+TWO_HOURS))}`,`SUMMARY:${ics(`${couple} — ${e.title}`)}`,`LOCATION:${ics(e.main?location:e.place)}`,`DESCRIPTION:${ics(`${describe(e)} Directions: ${e.map||mapsUrl}`)}`,'END:VEVENT']}),'END:VCALENDAR'].map(line=>line.replace(/(.{70})(?=.)/gu,'$1\r\n ')).join('\r\n'));

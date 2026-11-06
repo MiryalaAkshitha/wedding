@@ -13,7 +13,7 @@ export const wedding = {
   // Bride-side invitation: the bride is named first everywhere.
   bride: { name: 'Harika', parentsLabel: '', parents: ['D/o. Smt. & Sri Vuthunuri Jyothi - Maruthi'] },
   groom: { name: 'Krishna Vamshi', parentsLabel: '', parents: ['S/o. Smt. & Sri Muthyapu Nagarani - Mohan'] },
-  invitedBy: ['Vuthunuri Jyothi', 'Vuthunuri Maruthi'], // shown in the footer above the signature; set to [] to hide
+  invitedBy: ['Smt. & Sri Vuthunuri Jyothi - Maruthi'], // shown in the footer above the signature; set to [] to hide
 
   date: '2026-11-21', // main wedding day, YYYY-MM-DD
   utcOffset: '+05:30', // time zone of the venue (India is +05:30)
